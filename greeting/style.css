@@ -1,0 +1,94 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #303030;
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background: linear-gradient(135deg, #a012e1, #0a1793);
+}
+
+.greeting-card {
+  width: 410px;
+  max-width: 100%;
+  background: white;
+  padding: 42px 34px 34px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 5px 12px rgba(43, 75, 106, 0.16);
+}
+
+h1 {
+  font-size: 32px;
+  margin: 0 0 22px;
+  overflow-wrap: anywhere;
+}
+
+.greeting-form {
+  display: flex;
+  gap: 8px;
+}
+
+input {
+  flex: 1;
+  min-width: 0;
+  padding: 10px;
+  border: 1px solid #d0d5da;
+  border-radius: 7px;
+}
+
+#greet {
+  padding: 10px 15px;
+  background: #2196f3;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+#greet:hover {
+  background: #117dcf;
+}
+
+.name-list {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0 0;
+  display: grid;
+  gap: 7px;
+}
+
+.name-list[hidden], #hint[hidden] {
+  display: none;
+}
+
+.name-item {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background: #e2f2ff;
+  color: #334150;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.name-item:hover {
+  background: #cbe8ff;
+}
+
+#hint {
+  color: #6b7783;
+  font-size: 12px;
+  margin: 12px 0 0;
+}

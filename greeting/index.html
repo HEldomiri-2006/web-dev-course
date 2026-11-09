@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Greeting Website</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="page">
+    <section class="greeting-card">
+
+      <h1 id="title">Welcome</h1>
+
+      <form id="greeting-form" class="greeting-form">
+        <input
+          id="name"
+          type="text"
+          placeholder="Your name"
+          maxlength="60"
+          required
+        >
+        <button id="greet" type="submit">Greet</button>
+      </form>
+
+      <ul id="list" class="name-list" hidden></ul>
+
+      <p id="hint" hidden>
+        Click a name to say goodbye and remove it.
+      </p>
+
+    </section>
+  </main>
+</body>
+</html>
